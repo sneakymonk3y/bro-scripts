@@ -86,3 +86,4 @@ broctl deploy
 ## Script Authors
 * [CrowdStrike](https://github.com/CrowdStrike/cs-bro)
 * [EverNote](https://github.com/evernote/bro-scripts)
+* [Security Onion](https://github.com/Security-Onion-Solutions/securityonion-bro-scripts)
