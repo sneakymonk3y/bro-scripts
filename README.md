@@ -3,14 +3,7 @@
 RaspberryPi 3 IDS System based on [Bro](https://www.bro.org)
 
 # local.bro
-```
-
-
-
-
-
-
-
+```bro
 # Evernote scripts
 @load bro-scripts/human
 @load bro-scripts/ssl-ext-san
