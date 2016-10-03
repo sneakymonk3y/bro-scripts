@@ -2,11 +2,15 @@
 
 RaspberryPi 3 IDS System based on [Bro](https://www.bro.org). Suitable for a home 'blackbox' deployment.
 
-### Requirements
-* [Raspberry Pi 3](https://thepihut.com/products/raspberry-pi-3-model-b) or ARM based system.
-* [Raspbian Lite](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
-* [NetGear Gigabit Switch](https://www.amazon.co.uk/NETGEAR-GS105E-200UKS-ProSAFE-Managed-Ethernet/dp/B002YPJ8KM) or similiar that supports port mirroring. 
-* [Critical Stack API](https://intel.criticalstack.com/user/sign_up)
+### Descriptions
+* [dns-hunt] - Query velocity, length and counts of DNS queries.
+* [exfil] - Data exfiltration ICMP/FTP/LargeTX/SSH.
+* [file-extract] - Extract 'interesting' files.
+* [geoip] - Geolocation added to the conn.log
+* [human] - Makes bro data human readable.
+* [notice-ext] - Adds more detail to the notice email alerts.
+* [ssl-ext-san] - Adds x509 Subject Alernative Names attributes to SSL:Info.
+* [useragent-hunt] - Creates a count of HTTP User-Agent lengeth and vector of HTTP User-Agent variables.
 
 ### local.bro
 ```bro
