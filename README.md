@@ -1,4 +1,4 @@
-Collection of Bro-Scripts for Threat Hunting
+Collection of Bro-IDS scripts for Threat Hunting/Detection
 
 Credits:
 
