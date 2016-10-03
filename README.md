@@ -2,7 +2,7 @@
 
 RaspberryPi 3 IDS System based on [Bro](https://www.bro.org)
 
-# local.bro
+### local.bro
 ```bro
 # Evernote scripts
 @load bro-scripts/human
@@ -78,5 +78,5 @@ broctl deploy
 ```
 
 ## Script Authors
-* **Billie Thompson** - *Initial work* - [CrowdStrike](https://github.com/CrowdStrike/cs-bro)
-* **Billie Thompson** - *Initial work* - [EverNote](https://github.com/evernote/bro-scripts)
+* [CrowdStrike](https://github.com/CrowdStrike/cs-bro)
+* [EverNote](https://github.com/evernote/bro-scripts)
