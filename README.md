@@ -9,8 +9,8 @@ RaspberryPi 3 IDS System based on [Bro](https://www.bro.org). Suitable for a hom
 * [geoip] - Geolocation added to the conn.log
 * [human] - Makes bro data human readable.
 * [notice-ext] - Adds more detail to the notice email alerts.
-* [ssl-ext-san] - Adds x509 Subject Alernative Names attributes to SSL:Info.
-* [useragent-hunt] - Creates a count of HTTP User-Agent lengeth and vector of HTTP User-Agent variables.
+* [ssl-ext-san] - Adds x509 Subject Alternative Names attributes to SSL:Info.
+* [useragent-hunt] - Creates a count of HTTP User-Agent length and vector of HTTP User-Agent variables.
 
 ### local.bro
 ```bro
