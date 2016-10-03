@@ -2,6 +2,12 @@
 
 RaspberryPi 3 IDS System based on [Bro](https://www.bro.org)
 
+### Requirements
+* [Raspberry Pi 3](https://thepihut.com/products/raspberry-pi-3-model-b)
+* [Raspbian Lite](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
+* [NetGear Gigabit Switch](https://www.amazon.co.uk/NETGEAR-GS105E-200UKS-ProSAFE-Managed-Ethernet/dp/B002YPJ8KM) to support port mirroring.
+* [Critical Stack API](https://intel.criticalstack.com/user/sign_up)
+
 ### local.bro
 ```bro
 # Evernote scripts
