@@ -1,23 +1,48 @@
-global mime_to_ext: table[string] of string = {
-	["application/x-dosexec"] = "exe",
-	["text/plain"] = "txt",
-	["image/jpeg"] = "jpg",
-	["image/png"] = "png",
-	["text/html"] = "html",
-};
+module ExtractAllFiles;
+
+export {
+        ## Path to save extracted files to
+        const path = "/opt/bro/extracted/" &redef;
+
+        ## This table contains a conversion of common mime types to their
+        ## corresponding 'normal' file extensions.
+        const common_types: table[string] of string = {
+                ["text/plain"] = "txt",
+                ["text/x-perl"] = "pl",
+                ["text/x-python"] = "py",
+                ["text/x-ruby"] = "rb",
+                ["text/x-lua"] = "lua",
+                ["text/x-php"] = "php",
+                ["image/gif"] = "gif",
+                ["image/x-ms-bmp"] = "bmp",
+                ["image/jpeg"] = "jpg",
+                ["image/png"] = "png",
+                ["application/x-dosexec"] = "exe",
+                ["application/msword"] = "doc",
+                ["application/vnd.openxmlformats-officedocument.wordprocessingml.document"] = "docx",
+                ["application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"] = "xlsx",
+                ["application/vnd.openxmlformats-officedocument.presentationml.presentation"] = "pptx",
+                ["application/java-archive"] = "jar",
+                ["application/x-java-applet"] = "jar",
+                ["application/x-shockwave-flash"] = "swf",
+                ["application/javascript"] = "js"
+        };
+}
 
 event file_sniff(f: fa_file, meta: fa_metadata)
-	{
-	if ( f$source != "HTTP" )
-		return;
+        {
+        if ( !meta?$mime_type )
+                return;
 
-	if ( ! meta?$mime_type )
-		return;
+        local ftype = "";
+        if ( meta$mime_type in common_types )
+                ftype = common_types[meta$mime_type];
+        else
+                ftype = split_string(meta$mime_type, /\//)[1];
 
-	if ( meta$mime_type !in mime_to_ext )
-		return;
-
-    local fname = fmt("/nsm/bro/extracted/%s-%s.%s", f$source, f$id, mime_to_ext[meta$mime_type]);
-    print fmt("Extracting file %s", fname);
-    Files::add_analyzer(f, Files::ANALYZER_EXTRACT, [$extract_filename=fname]);
-    }
+        local fname = fmt("%s%s-%s.%s", path, f$source, f$id, ftype);
+        Files::add_analyzer(f, Files::ANALYZER_EXTRACT, [$extract_filename=fname]);
+                                                                                                44,2-9        Top
+        local fname = fmt("%s%s-%s.%s", path, f$source, f$id, ftype);
+        Files::add_analyzer(f, Files::ANALYZER_EXTRACT, [$extract_filename=fname]);
+        }
