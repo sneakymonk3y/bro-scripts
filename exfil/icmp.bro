@@ -5,7 +5,7 @@
 @load base/frameworks/notice
 @load bro-scripts/human
 
-module Exfiltration;
+module Exfil;
 
 export {
 	# Use unique and descriptive names for each notice

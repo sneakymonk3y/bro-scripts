@@ -9,7 +9,7 @@
 @load base/protocols/dns
 @load bro-scripts/human
 
-module Exfiltration;
+module Exfil;
 
 export {
 	# Notice DNS strangeness

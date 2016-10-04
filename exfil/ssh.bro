@@ -4,7 +4,7 @@
 @load base/protocols/ssh
 @load base/frameworks/notice
 
-module Exfiltration;
+module Exfil;
 export {
 	redef enum Notice::Type += {
 		SSH,

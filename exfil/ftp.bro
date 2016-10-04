@@ -4,7 +4,7 @@
 @load base/frameworks/notice
 @load base/protocols/ftp
 
-module Exfiltration;
+module Exfil;
 
 export {
 	redef enum Notice::Type += {
