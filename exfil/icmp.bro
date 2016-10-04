@@ -3,7 +3,7 @@
 
 @load base/frameworks/sumstats
 @load base/frameworks/notice
-@load evernote/human
+@load bro-scripts/human
 
 module Exfiltration;
 
