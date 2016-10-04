@@ -1,1 +1,1 @@
-@load ./scripts.bro
+@load ./script.bro
