@@ -42,7 +42,4 @@ event file_sniff(f: fa_file, meta: fa_metadata)
 
         local fname = fmt("%s%s-%s.%s", path, f$source, f$id, ftype);
         Files::add_analyzer(f, Files::ANALYZER_EXTRACT, [$extract_filename=fname]);
-                                                                                                44,2-9        Top
-        local fname = fmt("%s%s-%s.%s", path, f$source, f$id, ftype);
-        Files::add_analyzer(f, Files::ANALYZER_EXTRACT, [$extract_filename=fname]);
         }
