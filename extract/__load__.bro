@@ -1,5 +1,5 @@
 @load ./main
-#@load ./plugins/extract-all-files.bro
+@load ./plugins/extract-all-files.bro
 @load ./plugins/extract-common-exploit-types.bro
 @load ./plugins/extract-java.bro
 @load ./plugins/extract-ms-office.bro
