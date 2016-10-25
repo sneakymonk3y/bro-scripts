@@ -1,4 +1,4 @@
-# FOXHOUND-IDS 
+# FOXHOUND-NSM 
 
 RaspberryPi 3 IDS System based on [Bro](https://www.bro.org). Suitable for a home 'blackbox' deployment.
 
