@@ -1,6 +1,6 @@
 # FOXHOUND-NSM 
 
-RaspberryPi 3 IDS System based on [Bro](https://www.bro.org). Suitable for a home 'blackbox' deployment.
+RaspberryPi 3 NSM system based on [Bro](https://www.bro.org). Suitable for a home 'blackbox' deployment.
 
 ### Descriptions
 * [geoip] - Geolocation added to the conn.log
