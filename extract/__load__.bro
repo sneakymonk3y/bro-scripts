@@ -8,4 +8,4 @@
 #@load ./plugins/store-files-by-sha1.bro
 #@load ./plugins/store-files-by-sha256.bro
 
-redef FileExtract::prefix = "/opt/bro/extracted/"; #REMEMBER TO CHANGE
+redef FileExtract::prefix = "/nsm/bro/extracted/"; #REMEMBER TO CHANGE
